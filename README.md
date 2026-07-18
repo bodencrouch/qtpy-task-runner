@@ -1,22 +1,15 @@
 # qtpy-task-runner
 
-Background task execution for Qt apps with progress UI hooks.
+Run work off the UI thread and surface status back in Qt widgets.
+
+If you've ever blocked the event loop with a long copy or network call, this is the other way.
 
 ## Install
 
 ```bash
-pip install -e .
-# or from GitHub:
-pip install git+https://github.com/bodencrouch/qtpy-task-runner
+pip install git+https://github.com/bodencrouch/qtpy-task-runner.git
+pip install qtpy PyQt5
 ```
-
-## Origin
-
-Extracted from the [PyKotor](https://github.com/bodencrouch/PyKotor) monorepo `utility` / related packages.
-KotOR-specific couplings were removed or made optional for standalone use.
-
-### DAG
-Optional: `loggerplus`, `app-process-lifecycle`.
 
 ## License
 
